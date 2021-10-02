@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+        tomcat:
+                image: tomcat
+                ports:
+                        - "8080:8080"
+                        - "8443:8443"
+                volumes:
+                        - /home/misterpki/tomcat-docker/conf:/usr/local/tomcat/conf
